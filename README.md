@@ -6,25 +6,25 @@
 
 - 기존 SwipeStack 라이브러리를 `UP, DOWN Motion을 추가` 하였고 Listener 형태로 제공
 - `ViewHolder패턴`을 Sample로 제공
-```   
-new SwipeStack.SwipeStackListener() {
+``` Listener
+ new SwipeStack.SwipeStackListener() {
             @Override
-            public void onViewSwipedToLeft(int i) {
+            public void onViewSwipedToLeft(int position) {
 
             }
 
             @Override
-            public void onViewSwipedToRight(int i) {
+            public void onViewSwipedToRight(int position) {
 
             }
 
             @Override
-            public void onViewSwipedToTop(int i) {
+            public void onViewSwipedToTop(int position) {
 
             }
 
             @Override
-            public void onViewSwipedToBottom(int i) {
+            public void onViewSwipedToBottom(int position) {
 
             }
 
