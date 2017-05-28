@@ -2,7 +2,8 @@
 
 [![License Apache](https://img.shields.io/badge/license-Apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
-![Demo animation](https://github.com/yoosanghyeon/CustomSwipeStack/blob/master/modify_customswipestack_demo.gif)
+<img src="https://github.com/yoosanghyeon/CustomSwipeStack/blob/master/customswipestack_demo.gif" width="230" height="300">
+
 
 ## QuickStart ##
 
