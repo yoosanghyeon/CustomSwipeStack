@@ -127,7 +127,7 @@ public View getView(int position, View convertView, ViewGroup viewGroup) {
 
 Currently SwipeStack implements the following callbacks:
 
-- the ` SwipeStackListener ` notifies you when a view was swiped to the left / right or when the stack becomes empty.
+- the ` SwipeStackListener ` notifies you when a view was swiped to the left / right / up/ down or when the stack becomes empty.
 - the ` SwipeProgressListener ` notifies you about the progress when the user starts / stops dragging a view around.
 
 
