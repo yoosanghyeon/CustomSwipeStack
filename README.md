@@ -2,8 +2,37 @@
 
 [![License Apache](https://img.shields.io/badge/license-Apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
-<img src="https://github.com/yoosanghyeon/CustomSwipeStack/blob/master/customswipestack_demo.gif" width="230" height="300">
+<img src="https://github.com/yoosanghyeon/CustomSwipeStack/blob/master/customswipestack_demo.gif" width="270" height="480">
 
+> 기존 SwipeStack 라이브러리를 up, down motion을 추가 하였고 Listener 형태로 제공
+```   
+new SwipeStack.SwipeStackListener() {
+            @Override
+            public void onViewSwipedToLeft(int i) {
+
+            }
+
+            @Override
+            public void onViewSwipedToRight(int i) {
+
+            }
+
+            @Override
+            public void onViewSwipedToTop(int i) {
+
+            }
+
+            @Override
+            public void onViewSwipedToBottom(int i) {
+
+            }
+
+            @Override
+            public void onStackEmpty() {
+
+            }
+        });
+```
 
 ## QuickStart ##
 
@@ -94,6 +123,14 @@ public View getView(int position, View convertView, ViewGroup viewGroup) {
 
 }
 ```
+## Callbacks ##
+
+Currently SwipeStack implements the following callbacks:
+
+- the ` SwipeStackListener ` notifies you when a view was swiped to the left / right or when the stack becomes empty.
+- the ` SwipeProgressListener ` notifies you about the progress when the user starts / stops dragging a view around.
+
+
 ## Copyright Notice ##
 ```
 Copyright (C) 2017 Yoo Sanghyeon
