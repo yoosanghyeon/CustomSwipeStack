@@ -62,26 +62,26 @@ dependencies {
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipChildren="false">
 
-    <link.fls.swipestack.SwipeStack
-        android:id="@+id/swipeStack"
-        android:layout_width="320dp"
-        android:layout_height="240dp"
-        android:padding="32dp"/>
+
+    <yoosanghyeon.customswipestack.SwipeStack
+        android:id="@+id/swipestack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
 
 </FrameLayout>
+
 ```
 
 
 ### Create an ViewHolder ###
 
-Create Adapter in ViewHolder
+Create an ViewHolder
 
 *Example:*
 ```java
