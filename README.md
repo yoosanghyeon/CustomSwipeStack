@@ -4,7 +4,8 @@
 
 <img src="https://github.com/yoosanghyeon/CustomSwipeStack/blob/master/customswipestack_demo.gif" width="270" height="480">
 
-> 기존 SwipeStack 라이브러리를 up, down motion을 추가 하였고 Listener 형태로 제공
+- 기존 SwipeStack 라이브러리를 `UP, DOWN Motion을 추가` 하였고 Listener 형태로 제공
+- `ViewHolder패턴`을 Sample로 제공
 ```   
 new SwipeStack.SwipeStackListener() {
             @Override
