@@ -25,12 +25,13 @@ public class SwipeStack extends ViewGroup {
     public static final int SWIPE_DIRECTION_ONLY_RIGHT = 2;
     public static final int SWIPE_DIRECTION_ONLY_TOP = 3;
     public static final int SWIPE_DIRECTION_ONLY_BOTTOM = 4;
-    public static final int DEFAULT_ANIMATION_DURATION = 400;
+
+    public static final int DEFAULT_ANIMATION_DURATION = 300;
     public static final int DEFAULT_STACK_SIZE = 3;
-    public static final int DEFAULT_STACK_ROTATION = 0;
-    public static final float DEFAULT_SWIPE_ROTATION = 30.0F;
-    public static final float DEFAULT_SWIPE_OPACITY = 1.0F;
-    public static final float DEFAULT_SCALE_FACTOR = 1.0F;
+    public static final int DEFAULT_STACK_ROTATION = 8;
+    public static final float DEFAULT_SWIPE_ROTATION = 30f;
+    public static final float DEFAULT_SWIPE_OPACITY = 1f;
+    public static final float DEFAULT_SCALE_FACTOR = 1f;
     public static final boolean DEFAULT_DISABLE_HW_ACCELERATION = true;
     private static final String KEY_SUPER_STATE = "superState";
     private static final String KEY_CURRENT_INDEX = "currentIndex";
