@@ -6,7 +6,7 @@
 
 - 기존 SwipeStack 라이브러리를 `UP, DOWN Motion을 추가` 하였고 Listener 형태로 제공
 - `ViewHolder패턴`을 Sample로 제공
-``` Listener
+```java
  new SwipeStack.SwipeStackListener() {
             @Override
             public void onViewSwipedToLeft(int position) {
@@ -50,7 +50,34 @@ and:
 dependencies {
         compile 'com.github.yoosanghyeon:customswipestack:1.0.1'
 }
+
 ```
+
+
+### Use it in your layout file ###
+1. Use the `yoosanghyeon.customswipestack.SwipeStack` view in your XML layout file
+2. Set the parent view's `clipChildren` attribute to `false`
+
+*Example:*
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <link.fls.swipestack.SwipeStack
+        android:id="@+id/swipeStack"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:padding="32dp"/>
+
+</FrameLayout>
+```
+
 
 ### Create an ViewHolder ###
 
@@ -124,6 +151,47 @@ public View getView(int position, View convertView, ViewGroup viewGroup) {
 
 }
 ```
+
+
+### Assign the adapter to the SwipeStack ###
+
+Last, but not least, assign the adapter to the SwipeStack.
+
+*Example:*
+
+```java
+    SwipeStack swipeStackview = (SwipeStack) findViewById(R.id.swipestack);
+    SwipeStackAdapter swipeStackAdapter = new SwipeStackAdapter(this, items);
+    swipeStackview.setAdapter(swipeStackAdapter);
+    swipeStackview.setListener(new SwipeStack.SwipeStackListener() {
+              @Override
+              public void onViewSwipedToLeft(int i) {
+
+              }
+
+              @Override
+              public void onViewSwipedToRight(int i) {
+
+              }
+
+              @Override
+              public void onViewSwipedToTop(int i) {
+
+              }
+
+              @Override
+              public void onViewSwipedToBottom(int i) {
+
+              }
+
+              @Override
+              public void onStackEmpty() {
+
+              }
+          });
+
+```
+
 ## Callbacks ##
 
 Currently SwipeStack implements the following callbacks:
